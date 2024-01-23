@@ -163,78 +163,78 @@
 #     else:
 #         break
 
-# import random
+import random
 
-# characters = ['ߎ', 'ߏ', 'ߐ']
+characters = ['ߎ', 'ߏ', 'ߐ']
 
-# while True:
-#     computer_count = 0
-#     user_count = 0
+while True:
+    computer_count = 0
+    user_count = 0
 
-#     play_game = int(input('''
-#                                 Do you want to know your DOB ......
-#                                            Enter the password for unlock the GIFT
-#                                 '''))
+    play_game = int(input('''
+                                Do you want to know your DOB ......
+                                           Enter the password for unlock the GIFT
+                                '''))
 
-#     if play_game == ord(''):
-#         # rounds_to_play = 3  # Adjust the number of rounds as needed
+    if play_game == ord(''):
+        # rounds_to_play = 3  # Adjust the number of rounds as needed
 
-#         # for _ in range(rounds_to_play):
-#             user_choice = int(input('''
+        # for _ in range(rounds_to_play):
+            user_choice = int(input('''
 
-# CHOOSE ANY NUMBER
-# (1)
-#         (2)
-#                 (3)                     
-# AND FIND OUT YOUR YEAR OF BIRTH (YYYY)
-# '''))
-#             print("\n")
-#             if user_choice in range(1,4):
-#                 user_char = ord(characters[user_choice - 1]) 
-#                 computer_char = ord(random.choice(characters))
+CHOOSE ANY NUMBER
+(1)
+        (2)
+                (3)                     
+AND FIND OUT YOUR YEAR OF BIRTH (YYYY)
+'''))
+            print("\n")
+            if user_choice in range(1,4):
+                user_char = ord(characters[user_choice - 1]) 
+                computer_char = ord(random.choice(characters))
 
-#                 print("Your Gussing ...", user_char)
-#                 print("My Gussing...", computer_char)
+                print("Your Gussing ...", user_char)
+                print("My Gussing...", computer_char)
 
-#                 if user_char == computer_char:
-#                     print("We are gussing equal" )
-#                     computer_count += 1
-#                     user_count += 1
-#                     print("\n")
-#                     print("If you are not sure ,then play agian")
-#                 elif (user_char == ord('ߏ') and computer_char == ord('ߎ')) or \
-#                         (user_char == ord('ߎ') and computer_char == ord('ߐ')) or \
-#                         (user_char == ord('ߐ') and computer_char == ord('ߏ')):
-#                     d=ord('ߨ')
-#                     t=d-user_char
-#                     print("You are right ","\nI thing Your age:-",t)
-#                     print(ord(''),chr(47),ord(''),chr(47),user_char)
-#                     user_count += 1
-#                     print("\n")
-#                     print("If you are not sure ,then play agian") 
-#                 else:
-#                     d=ord('ߨ')
-#                     w=d-computer_char
-#                     computer_count += 1
-#                     print("I am right","\nI thing Your age:-",w)
-#                     print(ord(''),chr(47),ord(''),chr(47),computer_char)
-#             else:
-#                  print()
+                if user_char == computer_char:
+                    print("We are gussing equal" )
+                    computer_count += 1
+                    user_count += 1
+                    print("\n")
+                    print("If you are not sure ,then play agian")
+                elif (user_char == ord('ߏ') and computer_char == ord('ߎ')) or \
+                        (user_char == ord('ߎ') and computer_char == ord('ߐ')) or \
+                        (user_char == ord('ߐ') and computer_char == ord('ߏ')):
+                    d=ord('ߨ')
+                    t=d-user_char
+                    print("You are right ","\nI thing Your age:-",t)
+                    print(ord(''),chr(47),ord(''),chr(47),user_char)
+                    user_count += 1
+                    print("\n")
+                    print("If you are not sure ,then play agian") 
+                else:
+                    d=ord('ߨ')
+                    w=d-computer_char
+                    computer_count += 1
+                    print("I am right","\nI thing Your age:-",w)
+                    print(ord(''),chr(47),ord(''),chr(47),computer_char)
+            else:
+                 print()
 
-#         # print("\nEnd of Rounds. Scores:")     need=['',95,'']
-#         # print("User: ", user_count)
-#         # print("Computer: ", computer_count)
+        # print("\nEnd of Rounds. Scores:")     need=['',95,'']
+        # print("User: ", user_count)
+        # print("Computer: ", computer_count)
 
-#         # Final game round logic
-#         # if user_count > computer_count:
-#         #     print("Final You win the game...")
-#         # elif user_count < computer_count:
-#         #     print("Final Computer win the game...")
-#         # else:
-#         #     print("Final game draw...")
+        # Final game round logic
+        # if user_count > computer_count:
+        #     print("Final You win the game...")
+        # elif user_count < computer_count:
+        #     print("Final Computer win the game...")
+        # else:
+        #     print("Final game draw...")
 
-#     else:
-#         break
+    else:
+        break
 
 # from turtle import *
 # import turtle as tur
