@@ -4,9 +4,11 @@ a()
 
     #fun with arguments 
 def f(a,b):
-    print(a+b)
-f(70,90) 
-f(44,55)  
+    return a+b
+
+print(f(70,90))
+value = f(44,55) 
+print(value-10) 
 f(50,94) 
     #first_default parameter value 
 def d(a,b=56):
