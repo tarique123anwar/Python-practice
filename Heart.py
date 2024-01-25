@@ -5,4 +5,4 @@ if i=='B':
 elif i=='A':
     print("You want to give  your Heart to someone.")
 else:
-    print("You will find someone soon.")
+    print("You will find someone soon.")U

@@ -174,7 +174,7 @@ import turtle as tur
 def f1():
     # i=int(input("Sure prss (y/n)"))
     # if i=='y':
-          print("If you are not sure ,then play agian ")
+            print("If you are not sure ,then play agian ")
 characters = ['ߎ', 'ߏ', 'ߐ']
 def r():
     r=input("Sure,press (y/n)")
@@ -338,7 +338,7 @@ def r():
 
         # setting up
 
-        turt.backward(200)
+        turt.backward(300)
         turt.right(90)
         turt.forward(10)
         turt.left(90)
@@ -483,7 +483,6 @@ AND FIND OUT YOUR YEAR OF BIRTH (YYYY)
             computer_char = ord(random.choice(characters))
         # elif (user_choice >=1) or (user_choice >=2) or (user_choice >=3):
         #     print("Please enter (1-3) numbers ")
-
             print("Your Gussing ...", user_char)
             print("My Gussing...", computer_char)
             if user_char == computer_char:

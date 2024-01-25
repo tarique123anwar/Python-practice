@@ -10,4 +10,4 @@ else:
            print("Fail") 
 
            for _ in range(int(input())):
-       print(re.search(r'^([-\+])?\d*\.\d+$', input()) is not None)
+            print(re.search(r'^([-\+])?\d*\.\d+$', input()) is not None)
