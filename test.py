@@ -1,27 +1,27 @@
-# import math
-# import turtle as turt
+import math
+import turtle as turt
 
-# def hearta(k):
-#     return 15 * math.sin(k) ** 3
+def hearta(k):
+    return 15 * math.sin(k) ** 3
 
-# def heartb(k):
-#     return 12 * math.cos(k) - 5 * \
-#            math.cos(2 * k) - 2 * \
-#            math.cos(3 * k) - \
-#            math.cos(4 * k)
-# turt.penup()
+def heartb(k):
+    return 12 * math.cos(k) - 5 * \
+           math.cos(2 * k) - 2 * \
+           math.cos(3 * k) - \
+           math.cos(4 * k)
+turt.penup()
 # turt.goto(hearta(0) + 200, heartb(0))  # Adjust the x-coordinate to move to the right
-# turt.pendown()
-# turt = turt.Turtle()
-# turt.screen.bgcolor("black")
-# turt.speed(4)
+turt.pendown()
+turt = turt.Turtle()
+turt.screen.bgcolor("black")
+turt.speed(4)
 
-# # Draw the heart shape
-# for i in range(30 + 1 + 25):
-#     turt.goto(hearta(i) * 5, heartb(i) * 5)
-#     for j in range(5):
-#         turt.color("#f73487")
-#     turt.goto(0, 0)
+# Draw the heart shape
+for i in range(30 + 1 + 25):
+    turt.goto(hearta(i) * 2, heartb(i) * 2)
+    for j in range(5):
+        turt.color("#f73487")
+    turt.goto(0, 0)
 
 #//////////////////////////////
 
@@ -88,7 +88,8 @@
 # from turtle import *
 # import turtle
 # import datetime
-
+# import turtle
+# import math
 # tur = turtle.Turtle()
 
 # today1 = datetime.datetime.now()
@@ -157,8 +158,8 @@
 #     turtle.color("red")
 #     turtle.begin_fill()
     
-#     turtle.penup()
-#     turtle.goto(hearta(0) + 200, heartb(0))  # Adjust the x-coordinate to move to the right
+#     turtle.penup()       #changes
+#     turtle.goto(hearta(0) + 150, heartb(0))  # Adjust the x-coordinate to move to the right
 #     turtle.pendown()
 
 #     for i in range(360):
@@ -171,17 +172,48 @@
 
 # # Create a turtle
 # turt = turtle.Turtle()
-# turt.speed(2)
+# turt.speed(4)
 
 # # Draw the heart on the right side
 # draw_heart()
 
 # # Keep the window open
 # turtle.done()
+# turtle.exitonclick()
+# # try:
+#   s=int(input("Enter the value "))
+# except NameError:
+#   print("Variable x is not defined")
+# except:
+#   print("Something else went wrong")
 
-try:
-  s=int(input("Enter the value "))
-except NameError:
-  print("Variable x is not defined")
-except:
-  print("Something else went wrong")
+# import turtle
+# import time
+
+# def draw_heartbeat(scale_factor):
+#     turtle.clear()
+#     turtle.penup()
+#     turtle.goto(0, 0)
+#     turtle.pendown()
+
+#     turtle.color("red")
+#     turtle.width(3)
+
+#     turtle.forward(50 * scale_factor)
+#     turtle.backward(100 * scale_factor)
+#     turtle.forward(50 * scale_factor)
+
+#     turtle.hideturtle()
+#     turtle.update()
+#     time.sleep(0.5)  # Adjust the delay time for the heartbeat effect
+
+# # Create a turtle
+# turt = turtle.Turtle()
+# turt.speed(1)
+
+# # Heartbeat animation
+# for scale in [1, 1.5, 1]:
+#     draw_heartbeat(scale)
+
+# # Keep the window open
+# turtle.done()
