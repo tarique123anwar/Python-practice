@@ -1,4 +1,6 @@
-    #class is define (class) keyword and class name : colon
+#OOPS PROGRAMMM CONCEPT   
+
+ #class is define (class) keyword and class name : colon
 # class DemClass:
 #     s=20
 #     def fun(self):
@@ -62,7 +64,7 @@
 # obj.showvalue()
 # obj.showvalue1(29,39)
 
-#constructor pro ,constructor ko call karne ki zarorat nahi hoti ye khud se ho jata ahi object bnate hi 
+#constructor pro ,constructor ko call karne ki zarorat nahi hoti ye khud se ho jata hai object bnatehi 
 # class Demo():
 #     a=10
 #     def __init__(self):
@@ -93,12 +95,12 @@
 # class C(A,B):
 #     def displayC(self):
 #         print("Welcome to Office")
-# obj=C()
+# obj=B()
 # obj.displayA()
 # obj.displayB()
-# obj.displayC()
+# # obj.displayC()
 
-    # Multilevel inheritance
+#     # Multilevel inheritance
 
 # class A:
 #     def displayA(self):
@@ -120,16 +122,133 @@
     # encapsulation (getter and setter method)
 
 
-class student:
-    def __init__(self):
-        self.__name=""
-    def getname(self):
-        return self.__name 
-    def setname(self,name):
-        self.__name=name
+# class student:
+#     def __init__(self):
+#         self.__name=""
+#     def getname(self):
+#         return self.__name 
+#     def setname(self,name):
+#         self.__name=name
 
-obj=student()
-obj.setname('Testing')
-name=obj.getname()
-print(name)
+# obj=student()
+# obj.setname('Testing')
+# name=obj.getname()
+# print(name)
+
+#//////////////////////////////31/1/2024//////////////////////////////////////////
+
+#practice...class and object 
+
+# class a:
+#     s=20*3
+# obj=a()
+# print(a.s)
+
+# class d:
+#     q=30
+#     w=300
+#     def e(self):
+#         print("Hy ji ")
+#         print("Hello")
+
+# obj=d()
+# print(obj.q)
+# print(obj.w)
+# obj.e
+# obj.d()
+
+#class object with method 
+
+# class test():
+#     r=233
+#     def show(self):
+#         self.c=self.r**self.r
+#         print("This is value ",self.r)
+#     def show2(self,a,b):
+#         print(a*b)
+# #this is object
+# obj=test()
+# obj.show()
+# obj.show2(30,234)
+
+# class t2():
+#     v=34+88
+#     def s(self):
+#         self.c=self.v**self.v
+#         print('this value',self.v)
+#     def x(self,a,b):
+#         print(a-b)
+# #create object
+# ob=t2()
+# ob.x(20,3)
+# ob.s()
+
+ # encapsulation (getter and setter method)
+
+# class student:
+#     __name="Anwar"
+#     def __init__(self):
+#         print(self.__name)
+#         self.__displayinfo()
+#     def __displayinfo(self):
+#         print("Welcome to Servicepack.ai")
+# obj=student()
+
+
+class s:
+    __n="Tarique"
+    def __init__(self):
+        print(self.__n)
+        self.__dis()
+    def __dis(self):
+        print("Welcome to servicepack.ai")
+obj=s()
+
+    # method overloading concept is same name fun calling repeating (yek fun ko baar baar call karna h with parameters and without parameters)
+
+class a:
+    def find_area(self,x=None,y=None):
+        if x !=None and y != None:
+            print(x*y)
+        elif x != None:
+            print(x*x)
+        else:
+            print("Nothing")
+obj=a()
+obj.find_area()
+obj.find_area(10)
+obj.find_area(49,89)
+
+    # same 
+
+
+class q:
+    def f(self,a=None , b=None):
+        if a !=None and b !=None:
+            print(a*b)
+        elif a != None:
+            print(a)
+        else :
+            print("Ntg")
+obj=q()
+obj.f(40,77)
+obj.f(40)
+obj.f()
+
+    # method overrding same naam ka fun firse aata hai to wo overide ho jata hai 
+
+class og:
+    def showdata(self):
+        print("I'm in python class ")
+class og2(og):
+    def showdata(self):
+        # c=input("Value\n")
+        print("I'm in java class\n")
+obj=og2()
+obj.showdata()
+obj.showdata()
+obj.showdata() 
+obj.showdata()
+# obj.showdata(33.3,32)
+# obj.showdata(30)
 

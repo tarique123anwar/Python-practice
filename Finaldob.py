@@ -303,34 +303,34 @@ def r():
             squre(80, 90)
 
         # tur.mainloop()
-        def hearta(k):
-            return 16 * math.sin(k) ** 3
+        # def hearta(k):
+        #     return 16 * math.sin(k) ** 3
 
-        def heartb(k):
-            return 13 * math.cos(k) - 5 * math.cos(2 * k) - 2 * math.cos(3 * k) - math.cos(4 * k)
+        # def heartb(k):
+        #     return 13 * math.cos(k) - 5 * math.cos(2 * k) - 2 * math.cos(3 * k) - math.cos(4 * k)
 
-        def draw_heart():
-            turtle.color("red")
-            turtle.begin_fill()
+        # def draw_heart():
+        #     turtle.color("red")
+        #     turtle.begin_fill()
 
-            turtle.penup()       #changes
-            turtle.goto(hearta(0) + 200, heartb(0))  # Adjust the x-coordinate to move to the right
-            turtle.pendown()
+        #     turtle.penup()       #changes
+        #     turtle.goto(hearta(0) + 200, heartb(0))  # Adjust the x-coordinate to move to the right
+        #     turtle.pendown()
 
-            for i in range(360):
-                k = math.radians(i)
-                x = hearta(k) + 200  # Adjust the x-coordinate to move to the right
-                y = heartb(k)
-                turtle.goto(x, y)
+        #     for i in range(360):
+        #         k = math.radians(i)
+        #         x = hearta(k) + 200  # Adjust the x-coordinate to move to the right
+        #         y = heartb(k)
+        #         turtle.goto(x, y)
 
-            turtle.end_fill()
+        #     turtle.end_fill()
 
-        # Create a turtle
-        turt = turtle.Turtle()
-        turt.speed(3)
+        # # Create a turtle
+        # turt = turtle.Turtle()
+        # turt.speed(3)
 
-        # Draw the heart on the right side
-        draw_heart()
+        # # Draw the heart on the right side
+        # draw_heart()
         # Keep the window open
         # turtle.done()
         # turtle.exitonclick()
