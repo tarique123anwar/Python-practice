@@ -1,6 +1,6 @@
 #OOPS PROGRAMMM CONCEPT   
 
- #class is define (class) keyword and class name : colon
+ #class is define (class) keyword , class name and : colon
 # class DemClass:
 #     s=20
 #     def fun(self):
@@ -43,13 +43,12 @@
 # print(d.Anwar)
 # d.clear()
 
-
 # class Anwar: #(This is Class)
 #     k=30
 # d=Anwar()    #(This is Object)
 # print(d.k)   #(Calling)
 
-#//////////////////////////////////////////////////////  30/1/2024 //////////////////////////////////////////////////////////#
+#//////////////////////////////////////////////////////  30/1/2024  //////////////////////////////////////////////////////////#
 
 #new practice
      #class object using Method in self keyword
@@ -249,6 +248,18 @@ obj.showdata()
 obj.showdata()
 obj.showdata() 
 obj.showdata()
-# obj.showdata(33.3,32)
-# obj.showdata(30)
+obj.showdata() 
+obj.showdata()
 
+#/////////////////////////???
+
+class d:
+    t=22
+    h=44
+ob=()
+print(d.t)
+print('\n')
+print(d.h)
+ob.d()
+ob.d()
+ 

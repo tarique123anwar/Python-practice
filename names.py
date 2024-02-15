@@ -2,7 +2,7 @@
 # for a in range(0,20,("s")):
 #     print(a)
 s=78
-print(chr(s), end ='')
+print(chr(s), end =' ')
 s=73
 print(chr(s), end =' ')
 s=84
@@ -21,7 +21,7 @@ s=65
 print(chr(s), end =' ')
 s=82
 print(chr(s), end =' ')
-s=696868
+s=69
 print(chr(s), end =' ')
 s=68
 print(chr(s), end =' ')

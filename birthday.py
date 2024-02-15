@@ -1,5 +1,5 @@
 a=int(input("Enter the dob "))
-if (a ==ord("") or a ==ord("") or a ==ord('ߎ')) #or a==ord("ߏ") or a==ord("ߍ")):
+if (a ==ord("") or a ==ord("") or a ==ord('ߎ')):#or a==ord("ߏ") or a==ord("ߍ")):
     # x = ord("ߨ")                                    #or a ==ord("ߏ") or a ==ord("ߏ")):
     # s = ord("ߎ")
     # f=x-s
