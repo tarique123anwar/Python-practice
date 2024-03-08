@@ -31,6 +31,6 @@ while True:
     elif c==5:
             print("Dis Q",l)
     elif c==6:
-        break;
+        break
     else:
         print("Invalid Opr....")
