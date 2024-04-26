@@ -317,7 +317,7 @@ print(list(student.keys()))
 print(student.values())
 
 
-    #DICTIONATY METHODS  myDic.iterms() return all (key ,value ) pairs as tuples  
+    #DICTIONATY METHODS  myDic.items() return all (key ,value ) pairs as tuples  
 
 print(list (student.items()))
 pairs =list (student.items())

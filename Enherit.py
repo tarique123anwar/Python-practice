@@ -27,10 +27,10 @@ o.ss3()
 
 class a:
     def ss(self):
-        print("Hello")
+        print("Hel")
 class b:
     def ss2(self):
-        print("hello")
+        print("hell")
 class c(a,b):     # Multilevel Inheritance
     def ss3(self): 
         print("hEllO")

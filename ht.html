@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4caf50;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Management System</h1>
+
+    <!-- Add Employee Form -->
+    <h2>Add Employee</h2>
+    <form action="/add_employee" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="position">Position:</label>
+        <input type="text" id="position" name="position" required>
+
+        <label for="salary">Salary:</label>
+        <input type="text" id="salary" name="salary" required>
+
+        <label for="joining_date">Joining Date (YYYY-MM-DD):</label>
+        <input type="text" id="joining_date" name="joining_date" required>
+
+        <label for="dob">Date of Birth (YYYY-MM-DD):</label>
+        <input type="text" id="dob" name="dob" required>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile" required>
+
+        <input type="submit" value="Add Employee">
+    </form>
+
+    <!-- Display Employees -->
+    <h2>Employee List</h2>
+    <table>
+        <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Joining Date</th>
+            <th>DOB</th>
+            <th>Mobile</th>
+        </tr>
+        <!-- Populate this table with employee data from the server -->
+    </table>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <!-- Add your styles or link to external stylesheets here -->
+</head>
+<body>
+
+<main>
+    <h1>Employee Management System</h1>
+
+    <!-- Add Employee Form -->
+    <form action="/add_employee" method="post">
+        <!-- Your form fields go here -->
+
+        <button type="submit">Add Employee</button>
+    </form>
+
+    <!-- Display Employees Form -->
+    <form action="/display_employees" method="get">
+        <button type="submit">Display Employees</button>
+    </form>
+
+    <!-- Show Employee by ID Form -->
+    <form action="/show_employee" method="get">
+        <!-- Your form fields go here -->
+
+        <button type="submit">Show Employee</button>
+    </form>
+
+    <!-- Add more buttons and forms for other actions -->
+
+</main>
+
+</body>
+</html>
